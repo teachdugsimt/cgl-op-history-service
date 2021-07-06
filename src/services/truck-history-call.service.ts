@@ -51,7 +51,6 @@ export default class TruckHistoryCallService {
 
     const newTruckHistoryCall = truckHistoryCallList[0].map((history: any) => {
       const owner = history?.owner
-      console.log('owner :>> ', owner);
       return {
         avartar: owner?.avatar ?? null,
         callTime: date.format(new Date(history?.callTime), this.dateFormat),
