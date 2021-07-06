@@ -12,7 +12,7 @@ export default class JobHistoryCallController {
   private jobHistoryCallService = getInstanceByToken<JobHistoryCallService>(JobHistoryCallService);
 
   @GET({
-    url: '',
+    url: '/',
     options: {
       schema: getJobHistoryCallSchema
     }
@@ -42,7 +42,7 @@ export default class JobHistoryCallController {
   }
 
   @POST({
-    url: '',
+    url: '/',
     options: {
       schema: createJobHistoryCallSchema
     }

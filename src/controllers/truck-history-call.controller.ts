@@ -12,7 +12,7 @@ export default class TruckHistoryCallController {
   private truckHistoryCallService = getInstanceByToken<TruckHistoryCallService>(TruckHistoryCallService);
 
   @GET({
-    url: '',
+    url: '/',
     options: {
       schema: getTruckHistoryCallSchema
     }
@@ -42,7 +42,7 @@ export default class TruckHistoryCallController {
   }
 
   @POST({
-    url: '',
+    url: '/',
     options: {
       schema: createTruckHistoryCallSchema
     }
