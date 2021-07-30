@@ -4,7 +4,7 @@ import PingService from '../services/ping.service';
 import pingSchema from './ping.schema';
 
 
-@Controller({ route: '/ping' })
+@Controller({ route: '/api/v1/history/ping' })
 export default class PingController {
 
   private pingService = getInstanceByToken<PingService>(PingService);
